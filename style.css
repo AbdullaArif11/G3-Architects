@@ -219,8 +219,24 @@ main{
   display: flex;
   justify-content: space-between;
 }
-.s4-logos img{}
 
+/* ////////////////////////// */
+
+footer{
+  max-width: 1440px;
+  margin: 130px auto 216px;
+  background-color: #FFF4E7;
+  padding-top: 2.5rem;
+  padding-bottom: 2.4rem;
+}
+.footer-container{
+  text-align: center;
+}
+.footer-container p{
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
+}
 
 /* ////////////////////////// */
 @media screen and (max-width:576px) {
@@ -259,7 +275,6 @@ main{
     grid-template-columns: 1fr;
     gap: 10px;
   }
-
 
 }
 
