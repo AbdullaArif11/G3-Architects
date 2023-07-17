@@ -3,6 +3,10 @@
   font-family: 'Open Sans', sans-serif;
   font-family: 'Work Sans', sans-serif;
 }
+.paragraph{
+  color:  #727272;
+  font-size: 16px;
+}
 .btn-primary{
   width: 11.2rem;
   height: 4rem;
@@ -14,6 +18,9 @@
   font-weight: 600;
   border: none;
 }
+
+/* ////////////////// */
+
 
 header{
   background-color:rgba(255, 144, 14, 0.10);
@@ -55,32 +62,66 @@ nav li a{
   font-weight: 700;
 }
 .banner-description{
-  color: var(--dark-03, #727272);
+  color: #727272;
   font-size: 1rem;
   line-height: 1.6rem;
   margin-bottom: 32px;
 }
-
 .banner img{
   width: 100%;
   margin-top: 50px;
 }
 
-@media screen and (max-width:576px) {
-  header{
-    padding: 20px;
-  }
-  nav{
-    flex-direction: column;
-  }
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.team{
+  display: flex;
+  gap: 5rem;
+}
+.s1-pic{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 85px;
+}
+.s1-pic img{
+  width: 100%;
+}
+.s1-text{
+  margin: auto 0;
+}
+.s1-title{
+  font-size: 45px;
+  color: #727272;
+  font-weight: 500;
+}
+.s1-desciption{
+  margin-bottom: 40px;
+  max-width: 537px;
 }
 
+
+/* ///////////////////////// */
+@media screen and (max-width:576px) {
+  header{
+    padding: 50px 30px;
+  }
+  nav, .team{
+    flex-direction: column;
+  }
+  .s1-pic{
+    grid-template-columns: 1fr;
+  }
+
+}
 
 @media screen and (min-width:576px) and (max-width: 960px) {
   header{
     padding: 50px;
   }
-  nav{
+  nav,.team{
     flex-direction: column;
   }
 }
